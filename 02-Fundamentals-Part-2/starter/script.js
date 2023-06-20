@@ -139,6 +139,28 @@ years.forEach(year => console.log(calcAge1(year)));
 
 */
 
-const friends = ['James', 'John', 'Jay'];
 
-const james ='This is a test'
+/*
+const friends = ['James', 'John', 'Pete'];
+const newLength = friends.push('Jay'); //adds to the end of the array
+
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('Steven'); //adds to the beginning of the array
+console.log(friends);
+
+friends.pop(); //removes last element in array
+const popped = friends.pop();
+console.log(friends);
+
+friends.shift(); //removes first element in array
+console.log(friends);
+
+console.log(friends.indexOf('John')); //returns index of passed element
+console.log(friends.includes('Steven')); //returns true if element is found in array (uses strict equality)
+
+if (friends.includes('John')) {
+    console.log('You have a friends named John');
+}
+*/
