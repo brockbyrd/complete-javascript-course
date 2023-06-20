@@ -164,3 +164,21 @@ if (friends.includes('John')) {
     console.log('You have a friends named John');
 }
 */
+
+const brockArray = [
+    'Brock',
+    'Byrd',
+    2023-1998,
+    'Software Engineer',
+    ['Cole, Dustin, Joe']
+];
+
+const brockObject = {
+    firstName: 'Brock',
+    lastName: 'Byrd',
+    age: 2023-1998,
+    occupation: 'Software Engineer',
+    friends: ['Jay', 'Bob', 'Joe']
+};
+
+console.log(brockObject.firstName);
