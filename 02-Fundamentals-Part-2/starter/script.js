@@ -165,6 +165,7 @@ if (friends.includes('John')) {
 }
 */
 
+/*
 const brockArray = [
     'Brock',
     'Byrd',
@@ -181,4 +182,54 @@ const brockObject = {
     friends: ['Jay', 'Bob', 'Joe']
 };
 
-console.log(brockObject.firstName);
+console.log(brockObject);
+*/
+
+const brockObject = {
+    firstName: 'Brock',
+    lastName: 'Byrd',
+    age: 2023-1998,
+    occupation: 'Software Engineer',
+    friends: ['Jay', 'Bob', 'Joe']
+};
+
+console.log(brockObject.firstName); //dot notation
+console.log(brockObject['lastName']); //bracket notation
+
+const nameKey = 'Name';
+console.log(brockObject['first' + nameKey]);
+console.log(brockObject['last' + nameKey]);
+
+// const input = prompt('What do you want to know about Brock? Choose firstName, lastName, age, occupation, or friends?');
+
+// if (brockObject[input]){
+//     console.log(brockObject[input]);
+// } else {
+//     prompt('I do not understand this request. Please try again and choose firstName, lastName, age, occupation, or friends?')
+// }
+
+
+brockObject.location = 'Gulfport';
+brockObject['favoriteDrink'] = 'Water';
+console.log(brockObject);
+
+console.log(`${brockObject.firstName} has ${brockObject.friends.length} friends, and his best friend is named ${brockObject.friends[0]}`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
