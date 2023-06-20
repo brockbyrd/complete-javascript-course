@@ -140,3 +140,5 @@ years.forEach(year => console.log(calcAge1(year)));
 */
 
 const friends = ['James', 'John', 'Jay'];
+
+const james ='This is a test'
