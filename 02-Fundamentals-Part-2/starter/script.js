@@ -219,6 +219,7 @@ console.log(`${brockObject.firstName} has ${brockObject.friends.length} friends,
 
 */
 
+/*
 const brock = {
     firstName: 'Brock',
     lastName: 'Byrd',
@@ -252,12 +253,46 @@ console.log(brock.calcAge(brock.birthYear));
 console.log(brock.age);
 console.log(brock.getSummary());
 // console.log(brock['calcAge'](brock.birthYear));
+*/
+
+/*
+const mark = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    fullName: function(){
+        return `${this.firstName} ${this.lastName}`
+    },
+    mass: 78,
+    height: 1.69,
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height * this.height)
+        return this.bmi;
+    }
+}
+
+const john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    fullName: function(){
+        return `${this.firstName} ${this.lastName}`
+    },
+    mass: 92,
+    height: 1.95,
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height * this.height)
+        return this.bmi;
+    }
+}
 
 
-
-
-
-
+mark.calcBMI();
+john.calcBMI();
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`)
+  } else if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`)
+  }
+*/
 
 
 
