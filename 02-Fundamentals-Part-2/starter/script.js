@@ -185,6 +185,8 @@ const brockObject = {
 console.log(brockObject);
 */
 
+
+/*
 const brockObject = {
     firstName: 'Brock',
     lastName: 'Byrd',
@@ -214,6 +216,43 @@ brockObject['favoriteDrink'] = 'Water';
 console.log(brockObject);
 
 console.log(`${brockObject.firstName} has ${brockObject.friends.length} friends, and his best friend is named ${brockObject.friends[0]}`)
+
+*/
+
+const brock = {
+    firstName: 'Brock',
+    lastName: 'Byrd',
+    birthYear: 1998,
+    occupation: 'Software Engineer',
+    friends: ['Jay', 'Bob', 'Joe'],
+    hasDriversLicense: true,
+
+    // calcAge: function(birthYear) {
+    //     return (2023 - birthYear);
+    // }
+
+    calcAge: function(){
+        this.age = 2023 - this.birthYear
+        return this.age;
+    },
+
+    getSummary: function(){
+        // if(this.hasDriversLicense == true){
+        //     return`${this.firstName} ${this.lastName} is a ${this.calcAge(this.birthYear)}-year old ${this.occupation}, and he has a driver's license.`;
+        // } else {
+        //     return `${this.firstName} ${this.lastName} is a ${this.calcAge(this.birthYear)}-year old ${this.occupation}, and he does not have a driver's license.`;
+        // }
+
+        return `${this.firstName} ${this.lastName} is a ${this.calcAge()}-year old ${this.occupation}, and he ${this.hasDriversLicense ? 'a' : 'no'} driver's license`;
+    }
+};
+
+
+console.log(brock.calcAge(brock.birthYear));
+console.log(brock.age);
+console.log(brock.getSummary());
+// console.log(brock['calcAge'](brock.birthYear));
+
 
 
 
