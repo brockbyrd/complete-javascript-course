@@ -303,7 +303,7 @@ for(let rep = 1; rep <= 10; rep++) {
 }
 */
 
-
+/*
 const brockArray = [
     'Brock',
     'Byrd',
@@ -343,15 +343,29 @@ for (let i = 0; i < years.length; i++) {
 
     console.log(brockArray[i], typeof brockArray[i]);
 }
+*/
+
+const brockArray = [
+    'Brock',
+    'Byrd',
+    2023-1998,
+    'Software Engineer',
+    ['Cole, Dustin, Joe'],
+    true
+];
+
+for(let i = brockArray.length - 1; i >= 0; i--) {
+    console.log(i, brockArray[i]);
+}
 
 
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`------ Starting Exercise ${exercise} ------`);
 
-
-
-
-
-
-
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`Lifting Weights repetition ${rep}`)
+    }
+}
 
 
 
