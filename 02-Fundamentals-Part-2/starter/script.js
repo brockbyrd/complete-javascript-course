@@ -294,6 +294,67 @@ if (mark.bmi > john.bmi) {
   }
 */
 
+/*
+console.log('Lifting weights rep 1');
+
+//for loops run while true
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights rep ${rep}`)
+}
+*/
+
+
+const brockArray = [
+    'Brock',
+    'Byrd',
+    2023-1998,
+    'Software Engineer',
+    ['Cole, Dustin, Joe'],
+    true
+];
+
+const types = [];
+
+for(let i = 0; i < brockArray.length; i++) {
+    console.log(brockArray[i], typeof(brockArray[i]));
+
+    //types[i] = typeof(brockArray[i]);
+
+    types.push(typeof(brockArray[i]));
+}
+
+
+console.log(types);
+
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+console.log("ONLY STRINGS")
+for (let i = 0; i < years.length; i++) {
+    if(typeof brockArray[i] !== 'string') continue;
+    console.log(brockArray[i], typeof brockArray[i]);
+}
+
+
+console.log("BREAK WITH NUMBER")
+for (let i = 0; i < years.length; i++) {
+    if(typeof brockArray[i] === 'number') break;
+
+    console.log(brockArray[i], typeof brockArray[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
